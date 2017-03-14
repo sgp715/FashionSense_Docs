@@ -4,17 +4,27 @@
 These are the API Docs for Fashion Sense. They were originally forked from [Slate](https://github.com/lord/slate).
 
 ## Install
-* Install the Ruby bundler
-```
-$ sudo apt-get install ruby-bundler
-```
-* Install all the bundles
-```
-$ sudo bundle install
-```
+* Do it manually
+    * Install the Ruby bundler
+    ```
+    $ sudo apt-get install ruby-bundler
+    ```
+    * Install all the bundles
+    ```
+    $ sudo bundle install
+    ```
+* Using docker
+    * build it
+    ```
+    $ docker build -t docs_image .
+    ```
 
 ## Usage
-* Start up the docs
+* Running it locally without Docker
 ```
 $ bundle exec middleman server
+```
+* Runnig with Docker
+```
+$ docker run -p 4567:4567 docs_image
 ```
