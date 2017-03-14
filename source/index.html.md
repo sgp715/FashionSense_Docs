@@ -3,9 +3,9 @@ title: API Reference
 
 language_tabs:
   - shell
+  - python
 
-<!-- toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a> -->
+toc_footers:
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -27,6 +27,13 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -d '{"image":"base64endcodingofimage"} \
 "http://example.com/api/v1/classifications"
+```
+
+```python
+import requests
+
+r = requests.post("http://example.com/api/v1/classifications")
+print r.json
 ```
 
 > The above command returns JSON structured like this:
