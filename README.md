@@ -1,16 +1,16 @@
 # Fashion Sense API Docs
 
 ## Description
-These are the API Docs for Fashion Sense. They were originally forked from [Slate](https://github.com/lord/slate). 
+These are the API Docs for Fashion Sense. They were originally forked from [Slate](https://github.com/lord/slate).
 
-## Install 
+## Install
 * Install the Ruby bundler
 ```
-$ sudo apt install ruby-bundler
+$ sudo apt-get install ruby-bundler
 ```
 * Install all the bundles
 ```
-$ bundle exec middleman server
+$ sudo bundle install
 ```
 
 ## Usage
