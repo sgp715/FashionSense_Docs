@@ -25,14 +25,14 @@ Welcome to the Fashion Sense API! We can give you classifications for all of you
 ```shell
 curl -X POST \
 -H "Content-Type: application/json" \
--d '{"image":"base64endcodingofimage"} \
+-d '{"image":"base64endcodingofimage"}' \
 "http://example.com/api/v1/classifications"
 ```
 
 ```python
 import requests
 
-r = requests.post("http://example.com/api/v1/classifications")
+r = requests.post("http://example.com/api/v1/classifications", data={"image":"base64endcodingofimage"}, headers={"Content-Type":"application/json"})
 print r.json
 ```
 
